@@ -2,6 +2,7 @@
  Fault diagnosis experiments with the TrainTicket application.
 
 Injecting Faulty Objects|	|Fault numbers	|Root causes	|Details
+| ------ | ------ | ------ |
 TrainTicket Application	|F1	|OOM errors of JVM.	|Causes the application's heap memory footprint to exceed the Xmx limit, triggering an overflow.
 |	|F2	|Network communication delayed between microservices.	|Make the communication of ts-cancel-microservice incur a 200ms delay and timeout for partially sent cancellation requests.
 |	|F3	|Network communication lost and generates unexpected errors.	|Make the communication of ts-travel2-microservice generate 70% packet loss, and some requests to send notifications are lost.
@@ -12,6 +13,3 @@ Containers	|F7	|Triggers an error hang of the microservice container, resulting 
 |	|F8	|The CPU load in the container is 100%.	|Increase the pod’s CPU load of ts-config-microservice|
 
 
-| 内容 | 内容 |
-| ------ | ------ |
-| 内容 | 内容 |
