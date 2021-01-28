@@ -13,3 +13,7 @@ Containers	|F7	|Triggers an error hang of the microservice container, resulting 
 |	|F8	|The CPU load in the container is 100%.	|Increase the pod’s CPU load of ts-config-microservice|
 
 
+| Injecting Faulty Objects | Fault numbers | Root causes | Details |
+| ------ | ------ | ------ | ------ |
+| TrainTicket Application | F1 | OOM errors of JVM. | Causes the application's heap memory footprint to exceed the Xmx limit, triggering an overflow. |
+|  | F1 | OOM errors of JVM. | Causes the application's heap memory footprint to exceed the Xmx limit, triggering an overflow. |
